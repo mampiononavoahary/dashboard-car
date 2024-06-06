@@ -1,17 +1,23 @@
 @import "../../styles/variables.scss";
 
 .menu{
-    
+    color: black;
+    margin-top: 100px;
+    img{
+        width: 26px;
+        height: 29px;
+    }
     .item{
         display: flex;
         flex-direction: column;
         gap: 10px;
         margin-bottom: 20px;
+        color: black;
     }
     .title{
         font-size: 12px;
         font-weight: 200px;
-        color: $soft-color ;
+        color:rgb(31, 25, 18) ;
         text-transform: uppercase;
     }
     .listItem{

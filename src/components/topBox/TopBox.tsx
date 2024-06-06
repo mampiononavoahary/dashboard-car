@@ -1,21 +1,23 @@
 import "./topBox.scss"
-import { topDealUsers } from "../../data"
+import { topAppointement } from "../../data"
 
 export const TopBox = () => {
   return (
     <div className="topBox">
-        <h1>Top Deals</h1>
+        <h2>Appoitement List</h2>
         <div className="list">
-            {topDealUsers.map(user => (
-                <div className="listItem" key={user.id}>
+            {topAppointement.map(appoitement => (
+                <div className="listItem" key={appoitement.carId}>
                     <div className="user" >
-                        <img src={user.img} alt="" />
                         <div className="userTexts">
-                            <span className="username">{user.username}</span>
-                            <span className="email">{user.email}</span>
+                            <span className="name">{appoitement.name}</span>
+                            <span className="email">{appoitement.firstname}</span>
+                            <span className="email">{appoitement.email}</span>
+                            <span className="email">{appoitement.contact}</span>
+                            <span className="email">{appoitement.message}</span>
                         </div>
                     </div>
-                    <span className="amount">${user.amount}</span>
+                    <span className="amount">{appoitement.status}</span>
                 </div>
             ))}
         </div>

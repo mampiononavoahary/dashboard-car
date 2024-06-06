@@ -6,13 +6,18 @@ import {
   Outlet
 } from "react-router-dom";
 import { Users } from "./pages/users/Users";
-import { Products } from "./pages/products/Products";
+import { Cars } from "./pages/cars/Cars";
 import { Navbar } from "./components/navbar/Navbar";
 import { Footer } from "./components/footer/Footer";
 import { Menu } from "./components/menu/Menu";
 import { Login } from "./pages/login/Login";
 import "./styles/global.scss"
+import Car from "./pages/car/Car";
+import User from "./pages/user/User";
+import { QueryClient,QueryClientProvider } from "@tanstack/react-query";
 
+
+const queryClient = new QueryClient();
 function App() {
  const Layout = () =>{
   return(
@@ -23,7 +28,9 @@ function App() {
           <Menu/>
         </div>
         <div className="contentContainer">
-          <Outlet/>
+        <QueryClientProvider client={queryClient}>
+            <Outlet/>
+        </QueryClientProvider>
         </div>
       </div>
       <Footer />
@@ -48,9 +55,17 @@ function App() {
           element: <Users />
         },
         {
-          path:"/products",
-          element: <Products />
-        }
+          path:"/cars",
+          element: <Cars />
+        },
+        {
+          path:"/cars/:id",
+          element: <Car />
+        },
+        {
+          path:"/users/:id",
+          element: <User />
+        },
       ],
     },
     {

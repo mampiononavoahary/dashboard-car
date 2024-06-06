@@ -1,4 +1,4 @@
-import { Products } from "./pages/products/Products";
+import { color } from "@mui/system";
 
 export const menu = [
     {
@@ -9,13 +9,13 @@ export const menu = [
                 id:1,
                 title:"Homepage",
                 url: "/",
-                icon:"home.svg"
+                icon:"home.png"
             },
             {
                 id:2,
                 title:"Profile",
                 url:"/users/1",
-                icon:"user.svg"
+                icon:"profile.png"
             },
         ],
     },
@@ -27,117 +27,54 @@ export const menu = [
                 id:1,
                 title:"Users",
                 url:"/users",
-                icon:"user.svg"
+                icon:"users.png"
             },
             {
                 id:2,
-                title:"Products",
-                url:"/products",
-                icon:"product.svg"
+                title:"Cars",
+                url:"/cars",
+                icon:"cars.jpg"
             },
             {
                 id:3,
-                title:"Orders",
-                url:"/orders",
-                icon:"order.svg",
-            },
-            {
-                id:4,
-                title:"Posts",
-                url:"/posts",
-                icon:"post2.svg"
-            },
-        ],
-    },
-    {
-        id:3,
-        title:"general",
-        listItems:[
-            {
-                id:1,
-                title:"Elements",
-                url:"/",
-                icon:"element.svg"
-            },
-            {
-                id:2,
-                title:"Notes",
-                url:"/",
-                icon:"note.svg"
-            },
-            {
-                id:3,
-                title:"Forms",
-                url:"/",
-                icon:"form.svg"
-            },
-            {
-                id:4,
-                title:"Calendar",
-                url:"/",
-                icon:"calendar.svg"
-            },
-        ],
-    },
-    {
-        id:4,
-        title:"Maintenance",
-        listItems:[
-            {
-                id:1,
-                title:"Settings",
-                url:"/",
-                icon:"setting.svg"
-            },
-            {
-                id:2,
-                title:"Backups",
-                url:"/",
-                icon:"backup.svg"
-            },
-        ],
-    },
-    {
-        id:5,
-        title:"analytics",
-        listItems:[
-            {
-                id:1,
-                title:"Charts",
-                url:"/",
-                icon:"chart.svg"
-            },
-            {
-                id:2,
-                title:"Logs",
-                url:"/",
-                icon:"log.svg"
+                title:"Appointement",
+                url:"/appointement",
+                icon:"appointment-4.png",
             },
         ],
     },
 ];
 
-export const topDealUsers = [
+export const topAppointement = [
     {
-        id : 1,
-        img : "dazo.png",
-        username : "Zoarisoa Voahary",
-        email:"vohary@gmail.com",
-        amount:"3.6583",
+        carId : 1,
+        name : "voarhary",
+        firstname: "mampionona",
+        email: "voahary@gmail.com",
+        message:"je vous demande une rendez vous",
+        contact:"+261 33 12 745 15",
+        appointementDate:"2025-12-12 12:12:00012",
+        status: true,
     },
        {
-        id : 2,
-        img : "noavatar.png",
-        username : "Zoarisoa Voahary",
-        email:"vohary@gmail.com",
-        amount:"3.6583",
-    },
+        carId : 1,
+        name : "voarhary",
+        firstname: "mampionona",
+        email: "voahary@gmail.com",
+        message:"je vous demande une rendez vous",
+        contact:"+261 33 12 745 15",
+        appointementDate:"2025-12-12 12:12:00012",
+        status: true,
+       },
 {
-        id : 3,
-        img : "tiko.png",
-        username : "Zoarisoa Voahary",
-        email:"vohary@gmail.com",
-        amount:"3.6583",
+    carId : 1,
+    name : "voarhary",
+    firstname: "mampionona",
+    email: "voahary@gmail.com",
+    message:"je vous demande une rendez vous",
+    contact:"+261 33 12 745 15",
+    appointementDate:"2025-12-12 12:12:00012",
+    status: true
     },
 {
         id : 4,
@@ -273,33 +210,33 @@ chartData : [
         ],
     };
     export const barChartBoxVisit = {
-        title: "Total visite",
+        title: "Appointement List",
         color:"#FF8042",
         datakey:"visit",
         chartData: [
             {
                 name:"Sun",
-                visit:4000,
+                visit:0,
             },
             {
                 name:"Mon",
-                visit:3000,
+                visit:0,
             },
             {
                 name:"Tue",
-                visit:2000,
+                visit:0,
             },
             {
                 name:"Wed",
-                visit:2780,
+                visit:0,
             },
             {
                 name:"Thu",
-                visit:1890,
+                visit:0,
             },
             {
                 name:"Fri",
-                visit:2390,
+                visit:0,
             },
             {
                 name:"Sat",
@@ -307,3 +244,211 @@ chartData : [
             },
         ],
     };
+    export const userRows = [
+        {
+            id:1,
+            img:{
+
+            },
+            lastName:"voahary",
+            firstName:"zoarisoa",
+            email:"hei.zoarisoa@gmail.com",
+            phone:"038 33 427 54",
+            createdAt:"01.02.2024",
+            verified:true
+        },
+
+        {
+            id:2,
+            img:"/dazo.png",
+            lastName:"voahary",
+            firstName:"zoarisoa",
+            email:"hei.zoarisoa@gmail.com",
+            phone:"038 33 427 54",
+            createdAt:"01.02.2024",
+            verified:true
+        },
+        {
+            id:3,
+            img:"/dazo.png",
+            lastName:"voahary",
+            firstName:"zoarisoa",
+            email:"hei.zoarisoa@gmail.com",
+            phone:"038 33 427 54",
+            createdAt:"01.02.2024",
+            verified:true
+        },
+        {
+            id:4,
+            img:"/dazo.png",
+            lastName:"voahary",
+            firstName:"zoarisoa",
+            email:"hei.zoarisoa@gmail.com",
+            phone:"038 33 427 54",
+            createdAt:"01.02.2024",
+            verified:true
+        },
+        {
+            id:5,
+            img:"/dazo.png",
+            lastName:"voahary",
+            firstName:"zoarisoa",
+            email:"hei.zoarisoa@gmail.com",
+            phone:"038 33 427 54",
+            createdAt:"01.02.2024",
+            verified:true
+        },
+        {
+            id:6,
+            img:"/dazo.png",
+            lastName:"voahary",
+            firstName:"zoarisoa",
+            email:"hei.zoarisoa@gmail.com",
+            phone:"038 33 427 54",
+            createdAt:"01.02.2024",
+            verified:true
+        },
+        {
+            id:7,
+            img:"/dazo.png",
+            lastName:"voahary",
+            firstName:"zoarisoa",
+            email:"hei.zoarisoa@gmail.com",
+            phone:"038 33 427 54",
+            createdAt:"01.02.2024",
+            verified:true
+        },
+        {
+            id:8,
+            img:"/dazo.png",
+            lastName:"voahary",
+            firstName:"zoarisoa",
+            email:"hei.zoarisoa@gmail.com",
+            phone:"038 33 427 54",
+            createdAt:"01.02.2024",
+            verified:true
+        },
+        {
+            id:9,
+            img:"/dazo.png",
+            lastName:"voahary",
+            firstName:"zoarisoa",
+            email:"hei.zoarisoa@gmail.com",
+            phone:"038 33 427 54",
+            createdAt:"01.02.2024",
+            verified:true
+        },
+    ];
+    export const carRows = [
+        {
+            id:1,
+            img:"/noavatar",
+            title:"voahary",
+            color:"black",
+            producer:"matelas",
+            price:"$97000",
+            createdAt:"01.02.2024",
+            inStock:true
+        },
+
+        {
+            id:1,
+            img:"/noavatar",
+            title:"voahary",
+            color:"black",
+            producer:"matelas",
+            price:"$97000",
+            createdAt:"01.02.2024",
+            inStock:true
+        },
+        {
+            id:2,
+            img:"/noavatar",
+            title:"voahary",
+            color:"black",
+            producer:"matelas",
+            price:"$97000",
+            createdAt:"01.02.2024",
+            inStock:true
+        },
+        {
+            id:3,
+            img:"/noavatar",
+            title:"voahary",
+            color:"black",
+            producer:"matelas",
+            price:"$97000",
+            createdAt:"01.02.2024",
+            inStock:true
+        },
+        {
+            id:4,
+            img:"/noavatar",
+            title:"voahary",
+            color:"black",
+            producer:"matelas",
+            price:"$97000",
+            createdAt:"01.02.2024",
+            inStock:true
+        },
+        {
+            id:5,
+            img:"/noavatar",
+            title:"voahary",
+            color:"black",
+            producer:"matelas",
+            price:"$97000",
+            createdAt:"01.02.2024",
+            inStock:true
+        },
+        {
+            id:6,
+            img:"/noavatar",
+            title:"voahary",
+            color:"black",
+            producer:"matelas",
+            price:"$97000",
+            createdAt:"01.02.2024",
+            inStock:true
+        },
+        {
+            id:7,
+            img:"/noavatar",
+            title:"voahary",
+            color:"black",
+            producer:"matelas",
+            price:"$97000",
+            createdAt:"01.02.2024",
+            inStock:true
+        },
+        {
+            id:8,
+            img:"/noavatar",
+            title:"voahary",
+            color:"black",
+            producer:"matelas",
+            price:"$97000",
+            createdAt:"01.02.2024",
+            inStock:true
+        },
+    ];
+    export const singleUser = {
+        id:1,
+        email:"gsfdgfdgs",
+        name:"fsqdfdsqf",
+        password:"dfdsfdsf"
+    }
+    export const singleCar = {
+        id:1,
+        brand:"gsfdgfdgs",
+        color:"fsqdfdsqf",
+        description:"dfdsfdsf",
+        model:"fsfdfsqdf",
+        motor_type:"fqdsfd",
+        name:"dfsfdsqfd",
+        place_number:"fsqfsqfsq",
+        power:123,
+        price:4556,
+        status:"PINNED",
+        type:"fsdfs"
+    }
